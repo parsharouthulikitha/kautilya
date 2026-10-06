@@ -1,847 +1,295 @@
-<div align="center">
+# Sucrase
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6d28d9,100:06b6d4&height=250&section=header&text=SkillTwin&fontSize=76&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=AI-Powered%20Competency%20Intelligence%20and%20Capacity%20Building%20Platform&descAlignY=60&descSize=18" width="100%"/>
+[![Build Status](https://github.com/alangpierce/sucrase/workflows/All%20tests/badge.svg)](https://github.com/alangpierce/sucrase/actions)
+[![npm version](https://img.shields.io/npm/v/sucrase.svg)](https://www.npmjs.com/package/sucrase)
+[![Install Size](https://packagephobia.now.sh/badge?p=sucrase)](https://packagephobia.now.sh/result?p=sucrase)
+[![MIT License](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](LICENSE)
+[![Join the chat at https://gitter.im/sucrasejs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sucrasejs/Lobby)
 
-<a href="https://skilltwin.duckdns.org">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=8B5CF6&center=true&vCenter=true&width=760&height=50&lines=Assess+%E2%86%92+Identify+%E2%86%92+Learn+%E2%86%92+Reassess+%E2%86%92+Improve;Capability%2C+not+assumptions.;Training+completion+%E2%89%A0+Competency;Learners+%C2%B7+Trainers+%C2%B7+Institutions+%C2%B7+Industry+%C2%B7+Admins" alt="Typing SVG" />
-</a>
+## [Try it out](https://sucrase.io)
 
-<br/><br/>
+## Quick usage
 
-[![Live](https://img.shields.io/badge/🌐_Live-skilltwin.duckdns.org-8b5cf6?style=for-the-badge)](https://skilltwin.duckdns.org)
-![Status](https://img.shields.io/badge/Status-Production-22c55e?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Proprietary-ef4444?style=for-the-badge)
-
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6d28d9,100:06b6d4&height=3&section=header" width="100%"/>
-
-SkillTwin is a full-stack **AI-powered competency intelligence, learning, training and capacity-building platform** that connects **learners, trainers, institutions, industries and administrators** in one ecosystem.
-
-Unlike a traditional LMS that tracks courses and completion, SkillTwin focuses on:
-
-> 🎯 **What a learner knows → what is missing → what to learn next → how competency changes over time.**
-
-<div align="center">
-
-| 📚 Learning | 🧠 Competency | 🔍 Skill Gap | 📝 Assessments | 🤖 AI Tools |
-|:-:|:-:|:-:|:-:|:-:|
-| Courses & Paths | Evidence-based | Priority gaps | MCQs & Questionnaires | Tutor · Interview · Resume |
-
-| 🎥 Live Classes | 💬 Chatbot | 🏆 Certificates | 💼 Career Readiness | 📊 Analytics |
-|:-:|:-:|:-:|:-:|:-:|
-| Virtual classroom | Knowledge-base bot | Achievements | Opportunities | Role-based reports |
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6d28d9,100:06b6d4&height=3&section=header" width="100%"/>
-
-## 📌 Table of Contents
-
-- [🌐 Live Application](#-live-application)
-- [🧠 Overview](#-overview)
-- [🎯 Problem Statement](#-problem-statement)
-- [💡 Our Solution](#-our-solution)
-- [🧭 Core Philosophy](#-core-philosophy)
-- [✨ Key Features](#-key-features)
-- [👥 Role-Based Ecosystem](#-role-based-ecosystem)
-- [🎥 Live Classes](#-live-classes--virtual-classroom)
-- [🤖 AI Features](#-ai-features)
-- [🧠 Competency & Skill Gap](#-competency-intelligence--skill-gap-analysis)
-- [💬 Chatbot](#-skilltwin-chatbot)
-- [🏗️ Architecture](#️-platform-architecture)
-- [⚙️ Tech Stack](#️-technology-stack)
-- [🗂️ Project Structure](#️-project-structure)
-- [🔐 Security](#-authentication--security)
-- [📸 Screenshots](#-screenshots)
-- [💻 Local Development](#-local-development)
-- [☁️ Production Deployment](#️-production-deployment)
-- [🚨 Gemini 503 Handling](#-gemini-api-503-error)
-- [💼 Business Model](#-business-model)
-- [🛣️ Roadmap](#️-roadmap)
-- [🤝 Contributing](#-contributing)
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6d28d9,100:06b6d4&height=3&section=header" width="100%"/>
-
-## 🌐 Live Application
-
-<div align="center">
-
-### 🚀 **[https://skilltwin.duckdns.org](https://skilltwin.duckdns.org)**
-
-</div>
-
-Deployed on **AWS EC2 · AWS RDS PostgreSQL · Ubuntu · Nginx · HTTPS/SSL · FastAPI · React + Vite · Google Gemini · Systemd · DuckDNS**
-
----
-
-## 🧠 Overview
-
-> 💡 **Training completion does not necessarily mean competency.**
-
-A learner may finish a course and still have major practical gaps. SkillTwin builds a continuous competency lifecycle:
-
-```mermaid
-flowchart LR
-    A[👤 Profile] --> B[📝 Assessment]
-    B --> C[🧠 Competency]
-    C --> D[🔍 Skill Gap]
-    D --> E[🗺️ Learning Path]
-    E --> F[🎓 Training]
-    F --> G[🛠️ Practice]
-    G --> H[🔁 Re-assessment]
-    H --> I[📈 Progress]
-    I --> J[💼 Career Readiness]
-    J -.continuous improvement.-> B
+```bash
+yarn add --dev sucrase  # Or npm install --save-dev sucrase
+node -r sucrase/register main.ts
 ```
 
-<details>
-<summary>Plain-text version</summary>
+Using the [ts-node](https://github.com/TypeStrong/ts-node) integration:
+
+```bash
+yarn add --dev sucrase ts-node typescript
+./node_modules/.bin/ts-node --transpiler sucrase/ts-node-plugin main.ts
+```
+
+## Project overview
+
+Sucrase is an alternative to Babel that allows super-fast development builds.
+Instead of compiling a large range of JS features to be able to work in Internet
+Explorer, Sucrase assumes that you're developing with a recent browser or recent
+Node.js version, so it focuses on compiling non-standard language extensions:
+JSX, TypeScript, and Flow. Because of this smaller scope, Sucrase can get away
+with an architecture that is much more performant but less extensible and
+maintainable. Sucrase's parser is forked from Babel's parser (so Sucrase is
+indebted to Babel and wouldn't be possible without it) and trims it down to a
+focused subset of what Babel solves. If it fits your use case, hopefully Sucrase
+can speed up your development experience!
+
+**Sucrase has been extensively tested.** It can successfully build
+the [Benchling](https://benchling.com/) frontend code,
+[Babel](https://github.com/babel/babel),
+[React](https://github.com/facebook/react),
+[TSLint](https://github.com/palantir/tslint),
+[Apollo client](https://github.com/apollographql/apollo-client), and
+[decaffeinate](https://github.com/decaffeinate/decaffeinate)
+with all tests passing, about 1 million lines of code total.
+
+**Sucrase is about 20x faster than Babel.** Here's one measurement of how
+Sucrase compares with other tools when compiling the Jest codebase 3 times,
+about 360k lines of code total:
 
 ```text
-PROFILE → ASSESSMENT → COMPETENCY → SKILL GAP → LEARNING PATH
-   → TRAINING → PRACTICE → RE-ASSESSMENT → PROGRESS
-   → CAREER READINESS → CONTINUOUS IMPROVEMENT
+            Time            Speed
+Sucrase     0.57 seconds    636975 lines per second
+swc         1.19 seconds    304526 lines per second
+esbuild     1.45 seconds    248692 lines per second
+TypeScript  8.98 seconds    40240 lines per second
+Babel       9.18 seconds    39366 lines per second
 ```
 
-</details>
+Details: Measured on July 2022. Tools run in single-threaded mode without warm-up. See the
+[benchmark code](https://github.com/alangpierce/sucrase/blob/main/benchmark/benchmark.ts)
+for methodology and caveats.
 
----
+## Transforms
 
-## 🎯 Problem Statement
+The main configuration option in Sucrase is an array of transform names. These
+transforms are available:
 
-| | Challenge |
-|:-:|-----------|
-| 🧩 | Training data is scattered across multiple systems |
-| ✅ | Course completion is treated as the main indicator of learning |
-| 🔎 | Skill gaps are hard to identify accurately |
-| 🧭 | Learners don't know what to learn next |
-| 👀 | Trainers lack central visibility into learner progress |
-| 🏛️ | Institutions need consolidated competency analytics |
-| 🏭 | Industry lacks visibility into workforce capability |
-| 📜 | Certificates alone don't prove practical competency |
-| 💼 | Career preparation is separated from learning |
-| 🤖 | AI tools are disconnected from the learning workflow |
-| 🎥 | Live training, assessments and progress are stored separately |
+* **jsx**: Enables JSX syntax. By default, JSX is transformed to `React.createClass`,
+  but may be preserved or transformed to `_jsx()` by setting the `jsxRuntime` option.
+  Also adds `createReactClass` display names and JSX context information.
+* **typescript**: Compiles TypeScript code to JavaScript, removing type
+  annotations and handling features like enums. Does not check types. Sucrase
+  transforms each file independently, so you should enable the `isolatedModules`
+  TypeScript flag so that the typechecker will disallow the few features like
+  `const enum`s that need cross-file compilation. The Sucrase option `keepUnusedImports`
+  can be used to disable all automatic removal of imports and exports, analogous to TS
+  `verbatimModuleSyntax`.
+* **flow**:  Removes Flow type annotations. Does not check types.
+* **imports**: Transforms ES Modules (`import`/`export`) to CommonJS
+  (`require`/`module.exports`) using the same approach as Babel and TypeScript
+  with `--esModuleInterop`. If `preserveDynamicImport` is specified in the Sucrase
+  options, then dynamic `import` expressions are left alone, which is particularly
+  useful in Node to load ESM-only libraries. If `preserveDynamicImport` is not
+  specified, `import` expressions are transformed into a promise-wrapped call to
+  `require`.
+* **react-hot-loader**: Performs the equivalent of the `react-hot-loader/babel`
+  transform in the [react-hot-loader](https://github.com/gaearon/react-hot-loader)
+  project. This enables advanced hot reloading use cases such as editing of
+  bound methods.
+* **jest**: Hoist desired [jest](https://jestjs.io/) method calls above imports in
+  the same way as [babel-plugin-jest-hoist](https://github.com/facebook/jest/tree/master/packages/babel-plugin-jest-hoist).
+  Does not validate the arguments passed to `jest.mock`, but the same rules still apply.
 
----
+When the `imports` transform is *not* specified (i.e. when targeting ESM), the
+`injectCreateRequireForImportRequire` option can be specified to transform TS
+`import foo = require("foo");` in a way that matches the
+[TypeScript 4.7 behavior](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/#commonjs-interoperability)
+with `module: nodenext`.
 
-## 💡 Our Solution
+These newer JS features are transformed by default:
 
-**Traditional LMS**
-```text
-Course → Completion → Certificate
+* [Optional chaining](https://github.com/tc39/proposal-optional-chaining): `a?.b`
+* [Nullish coalescing](https://github.com/tc39/proposal-nullish-coalescing): `a ?? b`
+* [Class fields](https://github.com/tc39/proposal-class-fields): `class C { x = 1; }`.
+  This includes static fields but not the `#x` private field syntax.
+* [Numeric separators](https://github.com/tc39/proposal-numeric-separator):
+  `const n = 1_234;`
+* [Optional catch binding](https://github.com/tc39/proposal-optional-catch-binding):
+  `try { doThing(); } catch { }`.
+
+If your target runtime supports these features, you can specify
+`disableESTransforms: true` so that Sucrase preserves the syntax rather than
+trying to transform it. Note that transpiled and standard class fields behave
+slightly differently; see the
+[TypeScript 3.7 release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#the-usedefineforclassfields-flag-and-the-declare-property-modifier)
+for details. If you use TypeScript, you can enable the TypeScript option
+`useDefineForClassFields` to enable error checking related to these differences.
+
+### Unsupported syntax
+
+All JS syntax not mentioned above will "pass through" and needs to be supported
+by your JS runtime. For example:
+
+* Decorators, private fields, `throw` expressions, generator arrow functions,
+  and `do` expressions are all unsupported in browsers and Node (as of this
+  writing), and Sucrase doesn't make an attempt to transpile them.
+* Object rest/spread, async functions, and async iterators are all recent
+  features that should work fine, but might cause issues if you use older
+  versions of tools like webpack. BigInt and newer regex features may or may not
+  work, based on your tooling.
+
+### JSX Options
+
+By default, JSX is compiled to React functions in development mode. This can be
+configured with a few options:
+
+* **jsxRuntime**: A string specifying the transform mode, which can be one of three values:
+  * `"classic"` (default): The original JSX transform that calls `React.createElement` by default.
+    To configure for non-React use cases, specify:
+    * **jsxPragma**: Element creation function, defaults to `React.createElement`.
+    * **jsxFragmentPragma**: Fragment component, defaults to `React.Fragment`.
+  * `"automatic"`: The [new JSX transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
+      introduced with React 17, which calls `jsx` functions and auto-adds import statements.
+    To configure for non-React use cases, specify:
+    * **jsxImportSource**: Package name for auto-generated import statements, defaults to `react`.
+  * `"preserve"`: Don't transform JSX, and instead emit it as-is in the output code.
+* **production**: If `true`, use production version of functions and don't include debugging
+  information. When using React in production mode with the automatic transform, this *must* be
+  set to true to avoid an error about `jsxDEV` being missing.
+
+### Legacy CommonJS interop
+
+Two legacy modes can be used with the `imports` transform:
+
+* **enableLegacyTypeScriptModuleInterop**: Use the default TypeScript approach
+  to CommonJS interop instead of assuming that TypeScript's `--esModuleInterop`
+  flag is enabled. For example, if a CJS module exports a function, legacy
+  TypeScript interop requires you to write `import * as add from './add';`,
+  while Babel, Webpack, Node.js, and TypeScript with `--esModuleInterop` require
+  you to write `import add from './add';`. As mentioned in the
+  [docs](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-form-commonjs-modules-with---esmoduleinterop),
+  the TypeScript team recommends you always use `--esModuleInterop`.
+* **enableLegacyBabel5ModuleInterop**: Use the Babel 5 approach to CommonJS
+  interop, so that you can run `require('./MyModule')` instead of
+  `require('./MyModule').default`. Analogous to
+  [babel-plugin-add-module-exports](https://github.com/59naga/babel-plugin-add-module-exports).
+
+## Usage
+
+### Tool integrations
+
+* [Webpack](https://github.com/alangpierce/sucrase/tree/main/integrations/webpack-loader)
+* [Gulp](https://github.com/alangpierce/sucrase/tree/main/integrations/gulp-plugin)
+* [Jest](https://github.com/alangpierce/sucrase/tree/main/integrations/jest-plugin)
+* [Rollup](https://github.com/rollup/plugins/tree/master/packages/sucrase)
+* [Broccoli](https://github.com/stefanpenner/broccoli-sucrase)
+
+### Usage in Node
+
+The most robust way is to use the Sucrase plugin for [ts-node](https://github.com/TypeStrong/ts-node),
+which has various Node integrations and configures Sucrase via `tsconfig.json`:
+```bash
+ts-node --transpiler sucrase/ts-node-plugin
 ```
 
-**SkillTwin**
-```text
-Profile → Assessment → Competency → Skill Gap → Learning Path
-→ Training → Assessment → Progress → Career Readiness → Continuous Improvement
+For projects that don't target ESM, Sucrase also has a require hook with some
+reasonable defaults that can be accessed in a few ways:
+
+* From code: `require("sucrase/register");`
+* When invoking Node: `node -r sucrase/register main.ts`
+* As a separate binary: `sucrase-node main.ts`
+
+Options can be passed to the require hook via a `SUCRASE_OPTIONS` environment
+variable holding a JSON string of options.
+
+### Compiling a project to JS
+
+For simple use cases, Sucrase comes with a `sucrase` CLI that mirrors your
+directory structure to an output directory:
+```bash
+sucrase ./srcDir -d ./outDir --transforms typescript,imports
 ```
 
-The question shifts from *"What did the learner complete?"* to ***"What can the learner actually do, what is missing, and what should happen next?"***
+### Usage from code
 
----
+For any advanced use cases, Sucrase can be called from JS directly:
 
-## 🧭 Core Philosophy
-
-| # | Principle | Meaning |
-|---|-----------|---------|
-| 1️⃣ | **Evidence over assumptions** | Competency backed by measurable evidence |
-| 2️⃣ | **Competency over completion** | Capability is the larger objective |
-| 3️⃣ | **Personalized learning** | Recommendations respond to identified gaps |
-| 4️⃣ | **Continuous measurement** | Competency evolves with new evidence |
-| 5️⃣ | **Actionable intelligence** | Help users decide what to do next |
-
----
-
-## ✨ Key Features
-
-- 🔐 Secure authentication & role-based access control
-- 👤 Trainee, trainer, institution, industry & admin management
-- 📚 Course management & personalized learning paths
-- 📝 Assessments: subject-wise MCQs, questionnaires, deadlines
-- 🧠 Competency framework & skill management
-- 🔍 Skill-gap analysis & progress tracking
-- 🏆 Certificates, certifications & achievements
-- 💼 Opportunities & career readiness
-- 🔔 Notifications & announcements
-- 📊 Analytics & reports
-- 🤝 Trainer matching & trainer requests
-- 🤖 AI Tutor · AI Interview · AI Resume
-- 💬 Integrated chatbot
-- 🎥 Live classes / virtual classroom
-
----
-
-## 👥 Role-Based Ecosystem
-
-```mermaid
-flowchart TB
-    S((🌟 SkillTwin))
-    S --> T[🎓 Trainee]
-    S --> TR[👨‍🏫 Trainer]
-    S --> A[🛡️ Admin]
-    S --> I[🏫 Institution]
-    S --> IN[🏭 Industry]
+```js
+import {transform} from "sucrase";
+const compiledCode = transform(code, {transforms: ["typescript", "imports"]}).code;
 ```
 
-<details open>
-<summary><b>🎓 Trainee Portal</b></summary>
-
-<br/>
-
-- 📊 Dashboard: progress, courses, paths, competencies, skill gaps, assessments, certificates, achievements, opportunities, notifications
-- 👤 Professional profile: qualifications, education, experience, skills, interests, certificates
-- 📚 Browse, enroll, track and continue courses
-- 🗺️ Learning paths based on competency requirements
-- 📝 Attempt subject-wise MCQs and track assessment performance
-- 🔍 Skill-gap analysis with recommended learning
-- 💬 Submit course/content feedback
-- 🏆 Certificates, achievements, opportunities & career readiness
-- 🤖 AI Tutor · AI Interview · AI Resume
-
-```text
-Cloud Engineer Learning Path
-Linux → Networking → AWS → Docker → Kubernetes → Cloud Security
-```
-
-</details>
-
-<details>
-<summary><b>👨‍🏫 Trainer Portal</b></summary>
-
-<br/>
-
-- 📊 Dashboard: trainees, courses, assessments, competencies, pending activities
-- 👤 Profile: expertise, experience, skills, training information
-- 🎓 Trainees: monitor assigned learners
-- 📚 Courses: create and manage training content
-- 🧠 Competencies: work with learner development data
-- 📝 Questionnaires: create assessments & configure deadlines
-- 📁 Library: recorded lectures, presentations, study materials
-- 📨 Requests & 🔔 Notifications
-
-</details>
-
-<details>
-<summary><b>🏫 Institution Portal</b></summary>
-
-<br/>
-
-Dashboard · learner & trainer management · courses · competencies · assessments · certifications · analytics · reports · training management. Built for colleges, universities and training institutions.
-
-</details>
-
-<details>
-<summary><b>🏭 Industry Portal</b></summary>
-
-<br/>
-
-Skill requirements · workforce capability · talent discovery · competency visibility · training alignment · opportunities · analytics.
-
-```text
-Learning → Competency → Industry Requirements → Career Opportunities
-```
-
-</details>
-
-<details>
-<summary><b>🛡️ Admin Portal</b></summary>
-
-<br/>
-
-| Area | Modules |
-|------|---------|
-| 👥 **Users** | Trainees, Trainers, Institutions, Industries, Trainer Requests |
-| 📚 **Learning** | Courses, Assessments, Certifications |
-| 🧠 **Competency** | Competencies, Trainer Matching |
-| 📣 **Communication** | Announcements, Notifications, Achievements |
-| 📊 **Insights** | Analytics, Reports |
-| ⚙️ **System** | Settings |
-
-</details>
-
----
-
-## 🎥 Live Classes & Virtual Classroom
-
-SkillTwin is being extended with its own virtual classroom so live training becomes native to the competency ecosystem.
-
-```mermaid
-sequenceDiagram
-    participant TR as 👨‍🏫 Trainer (Host)
-    participant API as ⚡ FastAPI
-    participant TE as 🎓 Trainee (Participant)
-    TR->>API: Create live class (course, date/time, trainees)
-    API-->>TR: Room generated
-    TE->>API: View upcoming / live classes
-    TR->>API: Start class
-    TE->>API: Join class
-    API-->>API: Record attendance
-    API-->>TE: Learning progress updated
-```
-
-| Role | Permission |
-|------|------------|
-| 👨‍🏫 Trainer | **Host / Moderator** |
-| 🎓 Trainee | **Participant** |
-
-> 🔒 Permissions are determined by the **backend** using authenticated identity and class ownership/enrollment, never frontend parameters.
-
-**Long-term loop:** `Live Class → Attendance → Participation → Assessment → Progress → Competency → Skill Gap → Recommendation`
-
----
-
-## 🤖 AI Features
-
-SkillTwin uses the **Google Gemini API** through a backend AI service layer.
-
-| Feature | Description |
-|---------|-------------|
-| 🧑‍🏫 **AI Tutor** | Interactive learning assistance and explanations |
-| 🎤 **AI Interview** | AI-driven interview preparation |
-| 📄 **AI Resume** | Resume content assistance and improvement |
-| 🧠 **AI Competency Intelligence** | Analysis of learner information where implemented |
-
-```mermaid
-flowchart LR
-    R[⚛️ React] --> F[⚡ FastAPI] --> S[🧩 AI Service] --> G[✨ Google Gemini]
-    G --> F2[⚡ FastAPI] --> R2[⚛️ React]
-```
-
-🔑 The Gemini API key lives in `backend/.env` and is **never** exposed in frontend JavaScript.
-
----
-
-## 🧠 Competency Intelligence & Skill Gap Analysis
-
-```text
-Competency: Cloud Computing
-├── Linux
-├── Networking
-├── AWS
-├── Docker
-├── Kubernetes
-└── Security
-```
-
-Evidence sources: assessments, courses, learning progress, trainer evaluation, certificates, practical activities.
-
-```text
-Target Role: Cloud Engineer
-
-Linux        91%  🟢 Strong
-AWS          86%  🟢 Strong
-Docker       72%  🟡 Developing
-Kubernetes   48%  🔴 Priority Gap
-```
-
-> ℹ️ Values above are illustrative example data.
-
-```text
-Skill Gap → Kubernetes → Fundamentals → Pods & Deployments → Services
-→ Networking → Practical Assessment → Reassessment
-```
-
----
-
-## 💬 SkillTwin Chatbot
-
-A dedicated chatbot backed by a structured knowledge base, intentionally separate from the Gemini AI service.
-
-```mermaid
-flowchart LR
-    A[SkillTwin React] --> B[Embedded Chatbot] --> C[Chatbot React UI] --> D[Chatbot FastAPI] --> E[(Knowledge Base)] --> F[Response]
-```
-
-Production routes: `/chatbot/` · `/chatbot/api/` · `/embed.js`
-
----
-
-## 🏗️ Platform Architecture
-
-```mermaid
-flowchart TB
-    NET((🌍 Internet)) --> NGX[🔒 Nginx · HTTPS]
-    NGX --> FE[⚛️ React Frontend]
-    NGX --> BE[⚡ FastAPI Backend]
-    NGX --> CU[💬 Chatbot UI]
-    BE --> DB[(🐘 AWS RDS PostgreSQL)]
-    BE --> GM[✨ Gemini API]
-    CU --> CA[🧠 Chatbot API]
-```
-
-<details>
-<summary>Plain-text version</summary>
-
-```text
-                         INTERNET
-                            │
-                   ┌────────▼────────┐
-                   │  NGINX (HTTPS)  │
-                   └────────┬────────┘
-          ┌─────────────────┼──────────────────┐
-          ▼                 ▼                  ▼
-    React Frontend     FastAPI Backend     Chatbot UI
-                            │                  │
-                    ┌───────┴───────┐          ▼
-                    ▼               ▼      Chatbot API
-          AWS RDS PostgreSQL    Gemini API
-```
-
-</details>
-
----
-
-## ⚙️ Technology Stack
-
-| Layer | Technologies |
-|-------|--------------|
-| 🎨 **Frontend** | React · Vite · JavaScript (JSX) · Tailwind CSS · React Router · Axios · Lucide React |
-| ⚡ **Backend** | Python · FastAPI · Uvicorn · SQLAlchemy · Pydantic · JWT · REST APIs |
-| 🗄️ **Database** | PostgreSQL · AWS RDS · psycopg2 |
-| 🤖 **AI** | Google Gemini API · Google GenAI Python SDK |
-| ☁️ **Infra** | AWS EC2 · AWS RDS · Ubuntu · Nginx · Systemd · HTTPS/SSL · DuckDNS · Docker |
-| 🧰 **Dev** | Git · GitHub · npm · Python venv · PowerShell · Linux shell |
-
----
-
-## 🗂️ Project Structure
-
-```text
-SkillTwin/
-├── backend/
-│   ├── app/
-│   │   ├── ai/  core/  models/  routers/  schemas/  services/
-│   │   └── main.py
-│   ├── catalog/  migrations/  scripts/  uploads/
-│   ├── requirements.txt
-│   └── .env
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/  components/  context/  hooks/  pages/  services/
-│   │   └── App.jsx
-│   ├── package.json
-│   └── vite.config.js
-├── chatbot/
-│   ├── backend/   (app/engine, knowledge, routers, main.py)
-│   ├── frontend/
-│   └── embed/embed.js
-├── screenshots/
-├── db_schema.sql · skilltwin.sql · skilltwin_backup.sql
-└── README.md
-```
-
----
-
-## 🔐 Authentication & Security
-
-- 🔑 Password hashing & JWT authentication
-- 🛂 Role-based access control & protected routes
-- 🧱 Backend authorization on every sensitive action
-- 🌍 CORS configuration, HTTPS, Nginx reverse proxy
-- 🗝️ Environment variables, private DB credentials, backend-only AI keys
-- ✅ Active/inactive account handling & separate admin flow
-
-```mermaid
-flowchart LR
-    A[Frontend request] --> B[FastAPI] --> C{Valid JWT?}
-    C -- no --> X[⛔ 401 Deny]
-    C -- yes --> D[Identify user] --> E{Role allowed?}
-    E -- no --> Y[⛔ 403 Deny]
-    E -- yes --> F{Resource permission?}
-    F -- no --> Y
-    F -- yes --> G[✅ Allow]
-```
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-### 🏠 Platform Overview
-
-<img src="screenshots/home.png" width="90%" alt="SkillTwin Home"/>
-
-<br><br>
-
----
-
-### 🔐 Authentication
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-<b>Login</b><br><br>
-<img src="screenshots/login.png" width="95%" alt="SkillTwin Login"/>
-
-</td>
-
-<td align="center" width="50%">
-
-<b>Registration</b><br><br>
-<img src="screenshots/register.png" width="95%" alt="SkillTwin Registration"/>
-
-</td>
-</tr>
-</table>
-
-<br>
-
----
-
-## 🎓 Trainee Experience
-
-### 📊 Trainee Dashboard
-
-<img src="screenshots/trainee-dashboard.png" width="90%" alt="Trainee Dashboard"/>
-
-<br><br>
-
-### 📚 Learning & Courses
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-<b>Explore Courses</b><br><br>
-<img src="screenshots/trainee-explore-courses.png" width="95%" alt="Trainee Explore Courses"/>
-
-</td>
-
-<td align="center" width="50%">
-
-<b>My Courses</b><br><br>
-<img src="screenshots/my-courses.png" width="95%" alt="My Courses"/>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### 🧠 Competency & Assessments
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-<b>Competency</b><br><br>
-<img src="screenshots/trainee-competency.png" width="95%" alt="Trainee Competency"/>
-
-</td>
-
-<td align="center" width="50%">
-
-<b>Assessments</b><br><br>
-<img src="screenshots/trainee-assessments.png" width="95%" alt="Trainee Assessments"/>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### 💼 Opportunities & Profile
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-<b>Opportunities</b><br><br>
-<img src="screenshots/trainee-opportunities.png" width="95%" alt="Trainee Opportunities"/>
-
-</td>
-
-<td align="center" width="50%">
-
-<b>Trainee Profile</b><br><br>
-<img src="screenshots/trainee-profile.png" width="95%" alt="Trainee Profile"/>
-
-</td>
-</tr>
-</table>
-
-<br>
-
----
-
-## 👨‍🏫 Trainer Experience
-
-### 📊 Trainer Dashboard
-
-<img src="screenshots/trainer-dashboard.png" width="90%" alt="Trainer Dashboard"/>
-
-<br><br>
-
-### 📚 Trainer Library
-
-<img src="screenshots/trainer-library.png" width="90%" alt="Trainer Library"/>
-
-<br><br>
-
-### ❓ Trainer Questions
-
-<img src="screenshots/trainer-question.png" width="90%" alt="Trainer Questions"/>
-
-<br><br>
-
-### 🎥 Trainer Live Learning
-
-<table>
-<tr>
-
-<td align="center" width="33%">
-
-<b>Join Live Session</b><br><br>
-<img src="screenshots/trainer-live-join-screen.png" width="95%" alt="Trainer Live Join Screen"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>Ready Screen</b><br><br>
-<img src="screenshots/trainer-ready.png" width="95%" alt="Trainer Ready Screen"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>Live Class</b><br><br>
-<img src="screenshots/trainer-screen.png" width="95%" alt="Trainer Live Class Screen"/>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
----
-
-## 🏫 Institution Experience
-
-### 📊 Institution Dashboard
-
-<img src="screenshots/institution-dashboard.png" width="90%" alt="Institution Dashboard"/>
-
-<br><br>
-
-### 👨‍🎓 Learner Management
-
-<img src="screenshots/institution-learner.png" width="90%" alt="Institution Learner Management"/>
-
-<br><br>
-
-### 📚 Programs
-
-<img src="screenshots/institution-program.png" width="90%" alt="Institution Programs"/>
-
-<br><br>
-
-### 👨‍🏫 Trainer Management
-
-<img src="screenshots/institution-trainer.png" width="90%" alt="Institution Trainer Management"/>
-
-<br>
-
----
-
-## 🏭 Industry Experience
-
-### 📊 Industry Dashboard
-
-<img src="screenshots/industry-dashboard.png" width="90%" alt="Industry Dashboard"/>
-
-<br><br>
-
-### 🧠 Industry Competency
-
-<img src="screenshots/industry-competency.png" width="90%" alt="Industry Competency"/>
-
-<br><br>
-
-### 🎯 Industry Skills
-
-<img src="screenshots/industry-skill.png" width="90%" alt="Industry Skills"/>
-
-<br>
-
----
-
-## 🛡️ Administration
-
-### 📊 Admin Dashboard
-
-<img src="screenshots/admin-dashboard.png" width="90%" alt="Admin Dashboard"/>
-
-<br><br>
-
-### 📚 Course Management
-
-<img src="screenshots/admin-courses.png" width="90%" alt="Admin Course Management"/>
-
-<br><br>
-
-### 📝 Registration Requests
-
-<img src="screenshots/admin-registration-request.png" width="90%" alt="Admin Registration Requests"/>
-
-<br>
-
----
-
-## 🤖 AI-Powered Features
-
-<table>
-<tr>
-
-<td align="center" width="33%">
-
-<b>AI Tutor</b><br><br>
-<img src="screenshots/ai-tutor.png" width="95%" alt="AI Tutor"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>AI Interview</b><br><br>
-<img src="screenshots/ai-interview.png" width="95%" alt="AI Interview"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>AI Resume</b><br><br>
-<img src="screenshots/ai-resume.png" width="95%" alt="AI Resume"/>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
----
-
-## 💬 AI Assistant
-
-<img src="screenshots/chatbot.png" width="45%" alt="SkillTwin AI Assistant"/>
-
-<br><br>
-
----
-
-## 🎥 Trainee Live Learning
-
-<table>
-<tr>
-
-<td align="center" width="33%">
-
-<b>Join Live Session</b><br><br>
-<img src="screenshots/trainee-live-join-screen.png" width="95%" alt="Trainee Live Join Screen"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>Ready Screen</b><br><br>
-<img src="screenshots/trainee-ready.png" width="95%" alt="Trainee Ready Screen"/>
-
-</td>
-
-<td align="center" width="33%">
-
-<b>Live Class</b><br><br>
-<img src="screenshots/trainee-screen.png" width="95%" alt="Trainee Live Class Screen"/>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-</div>
-
----
-
-## 📊 Analytics & Reporting
-
-| Role | Insights |
-|------|----------|
-| 🎓 Trainee | Progress, competency, skill gaps, career readiness |
-| 👨‍🏫 Trainer | Learner performance, participation, competency outcomes |
-| 🏫 Institution | Learner & training analytics, competency matrix, certifications |
-| 🏭 Industry | Skill requirements, workforce capability, talent visibility |
-| 🛡️ Admin | Platform-wide users, courses, assessments, competencies, reports |
-
----
-
-## 💼 Business Model
-
-**B2B / B2B2C SaaS** for universities, colleges, training institutions, government bodies, enterprises, corporate L&D, skill-development organizations and industry bodies.
-
-- 💳 **SaaS subscription:** by learners, trainers, features, analytics, AI usage, storage
-- 🏢 **Enterprise deployment:** custom branding, frameworks, workflows, integrations
-- 🛒 **Training marketplace:** premium courses, trainer services, certifications
-- 🤖 **AI usage:** premium/enterprise/usage-based plans
-
----
-
-## 🛣️ Roadmap
-
-**✅ Current Platform**
-- [x] Role-based auth · Trainee / Trainer / Admin / Institution / Industry portals
-- [x] Courses · Assessments · Competencies · Skill gap · Learning paths · Progress
-- [x] Certificates · Achievements · Opportunities · Career readiness
-- [x] AI Tutor · AI Interview · AI Resume · Chatbot
-- [x] Analytics · Reports · AWS deployment · HTTPS · Production domain
-
-**🚧 In Progress / Next**
-- [ ] Fully integrated live classes & attendance
-- [ ] Virtual classroom analytics
-- [ ] Advanced competency evidence & automated updates
-- [ ] Improved learning recommendations
-- [ ] Industry skill-demand mapping & advanced trainer matching
-- [ ] More advanced AI evaluation & production AI fallback handling
-
-**🔮 Future**
-- [ ] Multi-tenant SaaS & organization-specific frameworks
-- [ ] Workforce intelligence & skill-demand forecasting
-- [ ] Enterprise & LMS integrations
-- [ ] Mobile application
-- [ ] Advanced AI agents & automated learning interventions
-
----
-
-## 🌟 SkillTwin
-
-### Assess → Identify → Learn → Reassess → Improve
-
-> **Capability, not assumptions.**
-
-**React · Vite · Tailwind CSS · FastAPI · Python · SQLAlchemy · PostgreSQL · AWS · Nginx · Gemini API**
-
-### 🚀 [Visit the Live Platform](https://skilltwin.duckdns.org)
-
-**Built to Transform Learning Into Measurable Capability.**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:6d28d9,100:0f172a&height=120&section=footer" width="100%"/>
-</div>
+## What Sucrase is not
+
+Sucrase is intended to be useful for the most common cases, but it does not aim
+to have nearly the scope and versatility of Babel. Some specific examples:
+
+* Sucrase does not check your code for errors. Sucrase's contract is that if you
+  give it valid code, it will produce valid JS code. If you give it invalid
+  code, it might produce invalid code, it might produce valid code, or it might
+  give an error. Always use Sucrase with a linter or typechecker, which is more
+  suited for error-checking.
+* Sucrase is not pluginizable. With the current architecture, transforms need to
+  be explicitly written to cooperate with each other, so each additional
+  transform takes significant extra work.
+* Sucrase is not good for prototyping language extensions and upcoming language
+  features. Its faster architecture makes new transforms more difficult to write
+  and more fragile.
+* Sucrase will never produce code for old browsers like IE. Compiling code down
+  to ES5 is much more complicated than any transformation that Sucrase needs to
+  do.
+* Sucrase is hesitant to implement upcoming JS features, although some of them
+  make sense to implement for pragmatic reasons. Its main focus is on language
+  extensions (JSX, TypeScript, Flow) that will never be supported by JS
+  runtimes.
+* Like Babel, Sucrase is not a typechecker, and must process each file in
+  isolation. For example, TypeScript `const enum`s are treated as regular
+  `enum`s rather than inlining across files.
+* You should think carefully before using Sucrase in production. Sucrase is
+  mostly beneficial in development, and in many cases, Babel or tsc will be more
+  suitable for production builds.
+
+See the [Project Vision](./docs/PROJECT_VISION.md) document for more details on
+the philosophy behind Sucrase.
+
+## Motivation
+
+As JavaScript implementations mature, it becomes more and more reasonable to
+disable Babel transforms, especially in development when you know that you're
+targeting a modern runtime. You might hope that you could simplify and speed up
+the build step by eventually disabling Babel entirely, but this isn't possible
+if you're using a non-standard language extension like JSX, TypeScript, or Flow.
+Unfortunately, disabling most transforms in Babel doesn't speed it up as much as
+you might expect. To understand, let's take a look at how Babel works:
+
+1. Tokenize the input source code into a token stream.
+2. Parse the token stream into an AST.
+3. Walk the AST to compute the scope information for each variable.
+4. Apply all transform plugins in a single traversal, resulting in a new AST.
+5. Print the resulting AST.
+
+Only step 4 gets faster when disabling plugins, so there's always a fixed cost
+to running Babel regardless of how many transforms are enabled.
+
+Sucrase bypasses most of these steps, and works like this:
+
+1. Tokenize the input source code into a token stream using a trimmed-down fork
+   of the Babel parser. This fork does not produce a full AST, but still
+   produces meaningful token metadata specifically designed for the later
+   transforms.
+2. Scan through the tokens, computing preliminary information like all
+   imported/exported names.
+3. Run the transform by doing a pass through the tokens and performing a number
+   of careful find-and-replace operations, like replacing `<Foo` with
+   `React.createElement(Foo`.
+
+Because Sucrase works on a lower level and uses a custom parser for its use
+case, it is much faster than Babel.
+
+## Contributing
+
+Contributions are welcome, whether they be bug reports, PRs, docs, tests, or
+anything else! Please take a look through the [Contributing Guide](./CONTRIBUTING.md)
+to learn how to get started.
+
+## License and attribution
+
+Sucrase is MIT-licensed. A large part of Sucrase is based on a fork of the
+[Babel parser](https://github.com/babel/babel/tree/main/packages/babel-parser),
+which is also MIT-licensed.
+
+## Why the name?
+
+Sucrase is an enzyme that processes sugar. Get it?
